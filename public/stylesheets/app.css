@@ -1,0 +1,47 @@
+html {
+  height: 100%; }
+
+body {
+  font-family: 'Open Sans';
+  color: white;
+  min-height: 100%;
+  background: -webkit-radial-gradient(#2b1339, #380c77);
+  background: radial-gradient(#2b1339, #380c77); }
+
+body.landing {
+  background: #5b5579; }
+
+.hero-content {
+  background: #2f1d57;
+  padding: 100px; }
+
+.hero-content h1 {
+  font-size: 70px;
+  margin-bottom: 50px;
+  font-weight: 300; }
+
+.selling-points {
+  padding: 100px; }
+
+.selling-points .point {
+  width: 32%;
+  float: left;
+  padding: 0 0.5%; }
+
+.selling-points .point h5 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  height: 85px; }
+
+.selling-points .point p {
+  font-size: 14px; }
+
+.nav-bar {
+  background: #2c1231;
+  height: 90px;
+  padding: 0 100px; }
+
+
+/*# sourceMappingURL=app.css.map*/
