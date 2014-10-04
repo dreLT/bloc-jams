@@ -6,15 +6,27 @@ body {
   font-family: 'Open Sans';
   color: white;
   min-height: 100%;
+  background: -webkit-radial-gradient(  #2b1339, #380c77);
+  background: radial-gradient(#2b1339, #380c77);
 }
 
 body.landing {
   background: #5B5579;
 }
 
+body.landing .navbar {
+  margin-bottom: 0;
+}
+
+ /* medium-purple: #7B46A3 - 123, 70, 163 */
+ 
+ .player-header-nav {
+   background-color: rgba(123, 70, 163, .9);
+ }
+
   .hero-content {
     background: #2F1D57;
-    padding: 100px;
+    padding: 100px 0;
   }
  
   .hero-content h1 {
@@ -24,14 +36,14 @@ body.landing {
   }
 
     .selling-points {
-      padding: 100px;
+      padding: 100px 0;
     }
    
-    .selling-points .point {
+    /*.selling-points .point {
       width: 32%;
       float: left;
       padding: 0 0.5%;
-    }
+    }*/
    
     .selling-points .point h5 {
       font-size: 24px;
@@ -45,8 +57,47 @@ body.landing {
       font-size: 14px;
     }
 
-    .nav-bar {
-      background: #2c1231;
-      height: 90px;
-      padding: 0 100px;
-    }
+/* Album Page */
+
+.album-header-container {
+  margin-top: 55px;
+  margin-bottom: 40px;
+}
+
+/* This styles the right side of our Album Header */
+ .album-header-information {
+   /* Pushes the album information down and makes sure there's sufficient space at the bottom of the page */
+   margin-top: 45px;
+   margin-bottom: 20px;
+ }
+
+.album-header-information h3, .album-header-information h4, .album-header-information h5 {
+   line-height: 150%;
+ }
+
+  .album-header-information h3 {
+   font-size: 48px;
+   font-weight: 300;
+ }
+ 
+ .album-header-information h4 {
+   font-size: 24px;
+   font-weight: 700;
+ }
+ 
+ .album-header-information h5 {
+   font-size: 16px;
+   font-weight: 500;
+ }
+
+  /* This styles our Song Listing */
+ .table.album-song-listing {
+   /* Override the font for the entire table. */
+   font-weight: 300;
+ }
+
+  /* Override the defaults that Bootstrap sets. */
+ .table.album-song-listing td {
+   padding: 20px;
+   border-top: 1px solid rgba(255, 255, 255, .4);
+ }
