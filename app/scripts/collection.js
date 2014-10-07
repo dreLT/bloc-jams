@@ -10,6 +10,7 @@ var buildAlbumThumbnail = function() {
  + '      <br/>'
  + '      X songs'
  + '      <br/>'
+ + '      X:XX Total Length'
  + '    </p>'
  + '  </div>'
  + '</div>';
@@ -20,8 +21,14 @@ var buildAlbumThumbnail = function() {
 var updateCollectionView = function() {
   var $collection = $('.collection-container .row')
   $collection.empty();
-    
-  for (i = 0; i < 33; i++) {
+  
+  var randomizedAlbumOutput = function() {
+    return Math.floor(Math.random() * (100 - 25)) + 25;
+  };
+
+  console.log(randomizedAlbumOutput());
+  
+  for (i = 0; i < randomizedAlbumOutput(); i++) {
     var $newThumbnail = buildAlbumThumbnail();
     $collection.append($newThumbnail);
   };
