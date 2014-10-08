@@ -6,6 +6,11 @@
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
       <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+      <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+      <script src='/javascripts/app.js'></script>
+      <script>
+        require('scripts/app');
+      </script>
    </head>
    <body>
       <nav class="player-header-nav navbar">
@@ -23,38 +28,13 @@
             <img src="/images/album-placeholder.png" />
           </div>
           <div class='album-header-information col-md-8 col-md-push-1'> <!-- Album Information -->
-            <h3> The Colors </h3>
-            <h4> Pablo Picasso </h4>
-            <h5> 1881 on Cubism </h5>
+           <h3 class='album-title'> </h3>
+           <h4 class='album-artist'> </h4>
+           <h5 class='album-meta-info'> </h5>
           </div>
         </div>
         <div class="row"> <!-- Song table -->
           <table class='album-song-listing table'>
-           <tr>
-             <td class='col-md-1'> 1 </td>
-             <td class='col-md-9'> Blue </td>
-             <td class='col-md-2'> X:XX </td>
-           </tr>
-           <tr>
-             <td class='col-md-1'> 2 </td>
-             <td class='col-md-9'> Green </td>
-             <td class='col-md-2'> X:XX </td>
-           </tr>
-           <tr>
-             <td class='col-md-1'> 3 </td>
-             <td class='col-md-9'> Red </td>
-             <td class='col-md-2'> X:XX </td>
-           </tr>
-           <tr>
-             <td class='col-md-1'> 4 </td>
-             <td class='col-md-9'> Pink </td>
-             <td class='col-md-2'> X:XX </td>
-           </tr>
-           <tr>
-             <td class='col-md-1'> 5 </td>
-             <td class='col-md-9'> Magenta </td>
-             <td class='col-md-2'> X:XX </td>
-            </tr>
          </table>
        </div>
       </div>
