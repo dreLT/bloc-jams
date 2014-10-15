@@ -6,10 +6,12 @@ body {
   color: white;
   min-height: 100%;
   background: -webkit-radial-gradient(#2b1339, #380c77);
-  background: radial-gradient(#2b1339, #380c77); }
+  background: radial-gradient(#2b1339, #380c77);
+  padding-bottom: 150px; }
 
 body.landing {
-  background: #5b5579; }
+  background: #5b5579;
+  padding-bottom: 0; }
 
 body.landing .navbar {
   margin-bottom: 0; }
@@ -168,6 +170,137 @@ td.song-number {
   padding: 0;
   height: 70px;
   text-align: center; }
+
+.player-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 100; }
+
+.player-bar a, .player-bar a:hover {
+  color: white;
+  cursor: pointer;
+  text-decoration: none; }
+
+.player-bar .container {
+  display: table;
+  padding: 0;
+  min-height: 100%; }
+
+.player-bar-control-group {
+  display: table-cell;
+  vertical-align: middle; }
+
+.player-bar .left-controls {
+  width: 25%;
+  text-align: left; }
+
+.player-bar .right-controls {
+  width: 25%;
+  text-align: right; }
+
+.player-bar .play-controls a {
+  font-size: 20px;
+  vertical-align: middle;
+  transition: all 100ms ease-in-out; }
+
+.player-bar .play-controls a:hover {
+  color: rgba(255, 255, 255, 0.6); }
+
+.player-bar .play-controls .previous {
+  margin-right: 65px; }
+
+.player-bar .play-controls .play-pause {
+  margin-right: 60px;
+  font-size: 30px; }
+
+.player-bar .currently-playing {
+  width: 50%;
+  text-align: center;
+  position: relative; }
+
+.player-bar .currently-playing .song-name, .player-bar .currently-playing .artist-name {
+  text-align: center;
+  font-size: 12px;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300; }
+
+.player-bar .currently-playing .song-name {
+  top: 20px; }
+
+.player-bar .currently-playing .artist-name {
+  bottom: 20px; }
+
+.seek-control {
+  position: relative; }
+
+.seek-control .current-time {
+  position: absolute;
+  top: 10px; }
+
+.seek-control .total-time {
+  position: absolute;
+  right: 0;
+  top: 10px; }
+
+.seek-bar {
+  height: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  position: relative;
+  cursor: pointer; }
+
+.seek-bar .fill {
+  background: white;
+  width: 36%;
+  height: 5px;
+  border-radius: 2px; }
+
+.seek-bar .thumb {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background: white;
+  left: 36%;
+  margin-left: -5px;
+  top: 50%;
+  margin-top: -5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 100ms ease-in-out; }
+
+.seek-bar:hover .thumb {
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px; }
+
+.player-bar .queue-toggle {
+  display: inline-block;
+  margin-left: 75px; }
+
+.player-bar .queue-toggle i {
+  font-size: 20px; }
+
+.player-bar .volume {
+  display: inline-block; }
+
+.player-bar .volume i {
+  width: 40px;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle; }
+
+.player-bar .volume .seek-bar {
+  display: inline-block;
+  width: 100px;
+  vertical-align: middle; }
 
 
 /*# sourceMappingURL=app.css.map*/
