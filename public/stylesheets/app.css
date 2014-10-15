@@ -140,5 +140,34 @@ body.landing .navbar {
 .collection-album-container .collection-overlay-button .fa-play {
   padding-left: 5px; }
 
+.album-song-button {
+  text-align: center;
+  font-size: 14px;
+  background-color: white;
+  color: #d2287b;
+  border-radius: 50% 50%;
+  display: inline-block;
+  width: 28px;
+  height: 28px; }
+
+.album-song-button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #d2287b; }
+
+.album-song-button i {
+  line-height: 28px; }
+
+.album-song-button .fa-play {
+  padding-left: 5px; }
+
+.album-song-listing td {
+  vertical-align: center; }
+
+td.song-number {
+  padding: 0;
+  height: 70px;
+  text-align: center; }
+
 
 /*# sourceMappingURL=app.css.map*/
