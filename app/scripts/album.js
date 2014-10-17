@@ -140,17 +140,17 @@ var setupSeekBars = function() {
  
     $seekBar.addClass('no-animate');
 
-    $(document).bind('mousemove.thumb', function(event){
-      updateSeekPercentage($seekBar, event);
+      $(document).bind('mousemove.thumb', function(event){
+        updateSeekPercentage($seekBar, event);
+      });
+   
+      //cleanup
+      $(document).bind('mouseup.thumb', function(){
+        $seekBar.removeClass('no-animate');
+        $(document).unbind('mousemove.thumb');
+        $(document).unbind('mouseup.thumb');
+      });
     });
- 
-    //cleanup
-    $(document).bind('mouseup.thumb', function(){
-      $seekBar.removeClass('no-animate');
-      $(document).unbind('mousemove.thumb');
-      $(document).unbind('mouseup.thumb');
-    });
-  });
 };
 
 if (document.URL.match(/\/album.html/)) {

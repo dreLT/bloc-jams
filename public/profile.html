@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+ <html>  
+   <head>
+     <title>Bloc Jams</title>
+     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.1/build/cssreset/cssreset-min.css">
+     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+     <link href="/stylesheets/app.css" rel="stylesheet">
+     <script src='/socket.io/socket.io.js'></script>    
+     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+      <script src='/javascripts/vendor.js'></script>
+     <script src='/javascripts/app.js'></script>
+     <script>
+       require('scripts/app');
+     </script>
+   </head>
+   <body>
+     <nav class="player-header-nav navbar">
+       <div class="container">
+         <div class='navbar-header'> <!-- Nav Bar -->
+           <a class='logo navbar-left'>
+             <img src="/images/blocjams.png">
+           </a>
+         </div>
+       </div>
+     </nav>
+     <div class="container">
+       <div>
+         <div class="user-profile-tabs-container">
+           <ul class="profile-pagination pagination tabs">
+             <li class='tab'>
+               <a href="#yourAccountTab">Your Account</a>
+             </li>
+             <li class='tab'>
+               <a href='#subscriptionTab'>Subscription</a>
+             </li>
+           </ul>
+         </div>
+         <!-- the markup for the user profile tab -->
+         <div class="user-account tab-pane" id="yourAccountTab">
+           <div class="page-header user-profile-header">Personal Information</div>
+           <div class="row">
+             <div class="col-md-3">
+               <div class="user-image-container"><img src="/images/user-upload-placeholder.png"/>
+                 <div style="padding: 10px" class="div"></div>
+                 <button class="default-button center-block">UPLOAD</button>
+               </div>
+             </div>
+             <div class="col-md-7">
+               <form role="form" class="default-form">
+                 <div class="form-group col-md-12">
+                   <label for="name">Name</label>
+                   <input id="name" type="text" class="form-control"/>
+                 </div>
+                 <div class="form-group col-md-12">
+                   <label for="email">Email</label>
+                   <input name="email" type="email" class="form-control"/>
+                 </div>
+                 <div class="form-group col-md-6">
+                   <label for="city">City</label>
+                   <input name="city" type="text" class="form-control"/>
+                 </div>
+                 <div class="form-group col-md-6">
+                   <label for="state">State</label>
+                   <input name="state" type="text" class="form-control"/>
+                 </div>
+                 <div class="form-group col-md-12">
+                   <label for="country">Country</label>
+                   <input name="country" type="text" class="form-control"/>
+                 </div>
+                 <button class="default-button center-block">SAVE PROFILE</button>
+               </form>
+               <div style="padding: 20px" class="div"></div>
+               <form role="form" class="default-form">
+                 <div class="form-group col-md-12">
+                   <label for="password">Password</label>
+                   <input name="password" type="password" class="form-control"/>
+                 </div>
+                 <div class="form-group col-md-12">
+                   <label for="password">Password Confirmation</label>
+                   <input name="password" type="password" class="form-control"/>
+                 </div>
+                 <button class="default-button center-block">CHANGE PASSWORD</button>
+               </form>
+             </div>
+           </div>
+         </div>
+         <!-- the markup for the subscription tab -->
+         <div class='user-subscription tab-pane' id="subscriptionTab" >
+           <div class="row text-center">
+             <img src="/images/subscription-placeholder.png"/><img src="/images/subscription-placeholder.png"/><img src="/images/subscription-placeholder.png"/>
+           </div>
+           <div style="padding:20px"></div>
+           <div class="row">
+             <div class="col-sm-6 col-sm-push-3">
+               <h3 class="subsection-label col-sm-12">Credit Cards</h3>
+               <div class="col-sm-12">
+                 <table class="table credit-card-list">
+                   <tr>
+                     <td class="col-sm-2">VISA</td>
+                     <td class="col-sm-9">XXXX-1234</td>
+                     <td class="col-sm-1"><i class="fa fa-minus-circle"></i></td>
+                   </tr>
+                   <tr>
+                     <td class="col-sm-2">VISA</td>
+                     <td class="col-sm-9">XXXX-1234</td>
+                     <td class="col-sm-1"><i class="fa fa-minus-circle"></i></td>
+                   </tr>
+                 </table>
+                 <button class="default-button center-block">ADD CARD</button>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </body>
+ </html>

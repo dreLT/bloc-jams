@@ -1,0 +1,81 @@
+$hot-pink: #D2287B;
+ .user-profile-header {
+   border: none;
+   font-size: 24px;
+   font-weight: 300;
+   margin-top: 20px;
+ }
+ .user-image-container {
+   display: inline-block;
+ }
+ 
+ .tab-content.user-subscription {
+   .well {
+     background: transparent;
+     border: $hot-pink 2px solid;
+   }
+ 
+   .subsection-label {
+     margin-bottom: 15px;
+     font-size: 24px;
+     color: white;
+     font-weight: 300;
+   }
+ 
+   .table.credit-card-list {
+     td {
+       border-top-color: rgba(white, .6);
+       font-weight: 300;
+       font-size: 16px;
+     }
+   }
+   .fa-minus-circle {
+     color: $hot-pink;
+   }
+ 
+ }
+ .user-profile-tabs-container {
+   margin: 42px auto 20px;
+   text-align: center;
+   .pagination.profile-pagination {
+     font-weight: 700;
+     border: $hot-pink 2px solid;
+     border-radius: 8px;
+ 
+     & > li > a {
+       border: none;
+       background-color: transparent;
+       color: white;
+       letter-spacing: 2px;
+     }
+ 
+     & > .active > a {
+       background-color: $hot-pink;
+       border-radius: 4px;
+     }
+   }
+ }
+ 
+ .default-form {
+   $default-input-color: #0A032B;
+   label {
+     font-weight: 300;
+     font-size: 16px;
+   }
+   input {
+     background-color: rgba(white, .6);
+     border-radius: 0;
+     border: none;
+     font-weight: 300;
+     font-size: 16px;
+     padding: 10px 12px 10px;
+   }
+ }
+ 
+ .no-left-gutter {
+   padding-left: 0px;
+ }
+ 
+ .no-right-gutter {
+   padding-right: 0px;
+ }

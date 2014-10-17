@@ -224,6 +224,80 @@ td.song-number {
     margin-top: -10px;
     margin-left: -10px; }
 
+.default-button {
+  background-color: #d2287b;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  outline: none; }
+  .default-button:active {
+    background-color: #9b1d64;
+    outline: none; }
+  .default-button:disabled {
+    background-color: #b3b3b3;
+    cursor: not-allowed; }
+
+.user-profile-header {
+  border: none;
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 20px; }
+
+.user-image-container {
+  display: inline-block; }
+
+.tab-content.user-subscription .well {
+  background: transparent;
+  border: #d2287b 2px solid; }
+.tab-content.user-subscription .subsection-label {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: white;
+  font-weight: 300; }
+.tab-content.user-subscription .table.credit-card-list td {
+  border-top-color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+  font-size: 16px; }
+.tab-content.user-subscription .fa-minus-circle {
+  color: #d2287b; }
+
+.user-profile-tabs-container {
+  margin: 42px auto 20px;
+  text-align: center; }
+  .user-profile-tabs-container .pagination.profile-pagination {
+    font-weight: 700;
+    border: #d2287b 2px solid;
+    border-radius: 8px; }
+    .user-profile-tabs-container .pagination.profile-pagination > li > a {
+      border: none;
+      background-color: transparent;
+      color: white;
+      letter-spacing: 2px; }
+    .user-profile-tabs-container .pagination.profile-pagination > .active > a {
+      background-color: #d2287b;
+      border-radius: 4px; }
+
+.default-form label {
+  font-weight: 300;
+  font-size: 16px; }
+.default-form input {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 0;
+  border: none;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 10px 12px 10px; }
+
+.no-left-gutter {
+  padding-left: 0px; }
+
+.no-right-gutter {
+  padding-right: 0px; }
+
 html {
   height: 100%; }
 
