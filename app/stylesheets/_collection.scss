@@ -1,0 +1,62 @@
+.collection-album-container {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  .caption {
+    margin-top: 10px;
+    p {
+      font-size: 16px;
+      font-weight: 300; 
+      color: rgba(255, 255, 255, 0.6);
+      a {
+        color: rgba(255, 255, 255, 0.6);
+        &.album-name {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.collection-album-container {
+  .collection-album-image-container {
+    position: relative;
+    img {
+      max-width: 100%; 
+    }
+    .collection-album-image-overlay {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 10;
+      .collection-overlay-content {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+        .collection-overlay-button {
+          font-size: 20px;
+          background-color: white;
+          color: #d2287b;
+          border-radius: 50% 50%;
+          display: inline-block;
+          width: 42px;
+          height: 42px;
+          &:hover {
+            cursor: pointer;
+            color: white;
+            background-color: #d2287b;
+          }
+          i {
+            line-height: 42px;
+          }
+          i.fa-play {
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+  }
+}

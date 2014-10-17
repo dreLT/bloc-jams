@@ -1,0 +1,24 @@
+.hero-content {
+  background: #2F1D57;
+  padding: 100px 0;
+  background-color: #2F1D57;
+  h1 {
+    font-size: 70px;
+    margin-bottom: 50px;
+    font-weight: 300;
+  }
+}
+
+.selling-points {
+  padding: 100px 0;
+  .point h5 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 85px;
+  }
+  .point p {
+    font-size: 14px;
+  }
+}

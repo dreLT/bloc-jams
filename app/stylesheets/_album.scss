@@ -1,0 +1,60 @@
+.album-header-container {
+  margin-top: 55px;
+  margin-bottom: 40px;
+  .album-header-information {
+    margin-top: 45px;
+    margin-bottom: 20px;
+    h3, h4, h5 {
+      line-height: 150%;
+    }
+    h3 {
+      font-size: 48px;
+      font-weight: 300;
+    }
+    h4 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    h5 {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}
+
+table.album-song-listing {
+  font-weight: 300;
+  tbody tr td {
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, .4);
+    vertical-align: middle;
+  }
+}
+
+.album-song-button {
+  text-align: center;
+  font-size: 14px;
+  background-color: white;
+  color: #d2287b;
+  border-radius: 50% 50%;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  &:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #d2287b;
+  }
+  i {
+    line-height: 28px;
+  }
+  i.fa-play {
+    padding-left: 5px;
+  }
+}
+
+td.song-number {
+ padding: 0;
+ height: 70px;
+ text-align: center;
+}

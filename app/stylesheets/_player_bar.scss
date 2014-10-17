@@ -1,0 +1,139 @@
+.player-bar {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 150px;
+   background: rgba(255, 255, 255, 0.3);
+   z-index: 100;
+   a, a:hover {
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+   }
+   .container {
+      display: table;
+      padding: 0;
+      min-height: 100%;
+   }
+   .left-controls {
+      width: 25%;
+      text-align: left;
+   }
+   .right-controls {
+      width: 25%;
+      text-align: right;
+   }
+   .play-controls {
+      a {
+         font-size: 20px;
+         vertical-align: middle;
+         transition: all 100ms ease-in-out;
+         a:hover {
+            color: rgba(255, 255, 255, 0.6);
+         }
+      }
+      .previous {
+         margin-right: 65px;
+      }
+      .play-pause {
+         margin-right: 60px;
+         font-size: 30px
+      }
+   }
+   .currently-playing {
+      width: 50%;
+      text-align: center;
+      position: relative;
+      .song-name, .artist-name {
+         text-align: center;
+         margin: 0;
+         position: absolute;
+         width: 100%;
+         font-size: 16px;
+         font-weight: 300;
+      }
+      .song-name {
+         top: 20px;
+      }
+      .artist-name {
+         bottom: 20px;
+      }
+   }
+   .queue-toggle {
+      display: inline-block;
+      margin-left: 75px;
+      i {
+         font-size: 20px;
+      }
+   }
+   .volume {
+      display: inline-block;
+      i {
+         width: 40px;
+         font-size: 20px;
+         display: inline-block;
+         vertical-align: middle;
+      }
+      .seek-bar {
+         display: inline-block;
+         width: 100px;
+         vertical-align: middle;
+      }
+   }
+}
+
+.player-bar-control-group {
+   display: table-cell;
+   vertical-align: middle;
+} 
+.seek-control {
+   position: relative;
+   .current-time {
+      position: absolute;
+      top: 10px;
+   }
+   .total-time {
+      position: absolute;
+      right: 0;
+      top: 10px;
+   }
+}
+
+.seek-bar {
+   height: 5px;
+   background: rgba(255, 255, 255, 0.3);
+   border-radius: 2px;
+   position: relative;
+   cursor: pointer;
+   .fill {
+      background: white;
+      width: 36%;
+      height: 5px;
+      border-radius: 2px;
+   }
+   .thumb {
+      position: absolute;
+      height: 10px;
+      width: 10px;
+      background: white;
+      left: 36%;
+      margin-left: -5px;
+      top: 50%;
+      margin-top: -5px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 100ms ease-in-out;
+   }
+   &.no-animate {
+      .fill, .thumb {
+        transition: none;
+      }
+   }
+   &:hover .thumb {
+      width: 20px;
+      height: 20px;
+      margin-top: -10px;
+      margin-left: -10px;
+   }
+}
