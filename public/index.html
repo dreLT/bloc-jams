@@ -8,13 +8,14 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
     <script src="/javascripts/vendor.js"></script>
     <script src="/javascripts/app.js"></script>
     <script>
       require('scripts/app');
     </script>
   </head>
-  <body ng-controller='Landing.controller' class='landing'>
+  <body>
     <nav class="player-header-nav navbar">
         <div class="container">
           <div class='navbar-header'> <!-- Nav Bar -->
@@ -24,34 +25,7 @@
           </div>
         </div>
     </nav>
-    <div class='hero-content'> <!-- Hero content -->
-      <div class='container'> 
-        <h1>Block Jams</h1>
-        <h3 ng-click="subTextClicked()"> {{ subText }} </h3>
-      </div>
-    </div>
-    <div class='selling-points container'> <!-- Selling points -->
-      <div class='row'>
-          <div class='point col-md-4'>
-            <h5>Choose your music</h5>
-            <p>The world is full of music; why should you have to listen to music that someone else chose?</p>
-          </div>
-          <div class='point col-md-4'>
-            <h5>Unlimited, streaming, ad-free</h5>
-            <p>No arbitrary limits. No distractions.</p>
-          </div>
-          <div class='point col-md-4'>
-            <h5>Mobile enabled</h5>
-            <p>Listen to your music on the go. This streaming service is available on all mobile platforms.</p>
-          </div>
-      </div>   
-    </div>
-      <div class="landing-album-list container">
-        <div class="row">
-          <div class="col-md-4" ng-repeat="albumURL in albumURLs">
-            <img ng-src="{{albumURL}}">
-          </div>
-        </div>
-      </div>
-    </body>
+    <!-- Render templates here -->
+    <div ui-view></div>
+  </body>
 </html>
