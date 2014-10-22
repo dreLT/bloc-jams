@@ -1,11 +1,12 @@
-<div class='player-bar'>
+<div ng-controller='PlayerBar.controller' class='player-bar'>
  <div class='container'>
    <div class='play-controls player-bar-control-group left-controls'>
      <a class='previous'>
        <i class='fa fa-backward'></i>
      </a>
      <a class='play-pause'>
-       <i class='fa fa-play'></i>
+        <i class='fa fa-play' ng-show="!songPlayer.playing" ng-click="songPlayer.play()"></i>
+        <i class='fa fa-pause' ng-show="songPlayer.playing" ng-click="songPlayer.pause()"></i>
      </a>
      <a class='next'>
        <i class='fa fa-forward'></i>
@@ -13,16 +14,16 @@
    </div>
 
    <div class='currently-playing player-bar-control-group'>
-     <h2 class='song-name'>My dumb song</h2>
+     <h2 class='song-name'> {{ songPlayer.currentSong.name }} </h2>
      <div class='seek-control'>
        <div class='seek-bar'>
          <div class='fill'></div>
          <div class='thumb'></div>
        </div>
-       <div class='current-time'>2:30</div>
-       <div class='total-time'>4:45</div>
+       <div class='current-time'> {{ songPlayer.playTime }} </div>
+       <div class='total-time'> {{ songPlayer.currentSong.length }} </div>
      </div>
-     <h3 class='artist-name'>Fallout Boy</h3>
+     <h3 class='artist-name'> {{ songPlayer.currentAlbum.artist }} </h3>
    </div>
 
    <div class='right-controls player-bar-control-group'>
