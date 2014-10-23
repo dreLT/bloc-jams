@@ -1,14 +1,14 @@
 <div ng-controller='PlayerBar.controller' class='player-bar'>
  <div class='container'>
    <div class='play-controls player-bar-control-group left-controls'>
-     <a class='previous'>
+     <a class='previous' ng-click="songPlayer.previous()">
        <i class='fa fa-backward'></i>
      </a>
      <a class='play-pause'>
         <i class='fa fa-play' ng-show="!songPlayer.playing" ng-click="songPlayer.play()"></i>
         <i class='fa fa-pause' ng-show="songPlayer.playing" ng-click="songPlayer.pause()"></i>
      </a>
-     <a class='next'>
+     <a class='next' ng-click="songPlayer.next()">
        <i class='fa fa-forward'></i>
      </a>
    </div>
