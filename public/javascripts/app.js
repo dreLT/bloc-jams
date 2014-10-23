@@ -371,11 +371,6 @@ blocJams.controller('Album.controller', ['$scope', 'SongPlayer', function($scope
     $scope.pauseSong = function(song) {
       SongPlayer.pause();
     };
-  
-  // $scope.oddSongs = function() {
-  //   if ($odd === true) {
-  //     return 'background-color: white;';
-  //   }
 
 }]);
 
