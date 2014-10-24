@@ -5,7 +5,7 @@
         <img ng-src="{{ album.albumArtUrl }}">
         <div class="collection-album-image-overlay" ng-show="showOverlay">
           <div class="collection-overlay-content">
-            <a class="collection-overlay-button" ui-sref="album">
+            <a class="collection-overlay-button" ng-click="playAlbum(album)">
               <i class="fa fa-play"></i>
             </a>
             &nbsp;
@@ -17,7 +17,7 @@
       </div>
       <div class="collection-album-info caption">
         <p>
-          <a class="album-name" ui-sref="album"> {{ album.name }}</a>
+          <a class="album-name" ui-sref="album"> {{ album.name }} </a>
           <br/>
           <a ui-sref="album"> {{ album.artist }} </a>
           <br />
