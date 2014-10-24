@@ -174,7 +174,7 @@ td.song-number {
       font-size: 20px;
       display: inline-block;
       vertical-align: middle; }
-    .player-bar .volume .seek-bar {
+    .player-bar .volume .slider {
       display: inline-block;
       width: 100px;
       vertical-align: middle; }
@@ -193,18 +193,18 @@ td.song-number {
     right: 0;
     top: 10px; }
 
-.seek-bar {
+.slider {
   height: 5px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 2px;
   position: relative;
   cursor: pointer; }
-  .seek-bar .fill {
+  .slider .fill {
     background: white;
     width: 36%;
     height: 5px;
     border-radius: 2px; }
-  .seek-bar .thumb {
+  .slider .thumb {
     position: absolute;
     height: 10px;
     width: 10px;
@@ -216,9 +216,9 @@ td.song-number {
     border-radius: 50%;
     cursor: pointer;
     transition: all 100ms ease-in-out; }
-  .seek-bar.no-animate .fill, .seek-bar.no-animate .thumb {
+  .slider.no-animate .fill, .slider.no-animate .thumb {
     transition: none; }
-  .seek-bar:hover .thumb {
+  .slider:hover .thumb {
     width: 20px;
     height: 20px;
     margin-top: -10px;

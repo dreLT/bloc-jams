@@ -16,10 +16,7 @@
    <div class='currently-playing player-bar-control-group'>
      <h2 class='song-name'> {{ songPlayer.currentSong.name }} </h2>
      <div class='seek-control'>
-       <div class='seek-bar'>
-         <div class='fill'></div>
-         <div class='thumb'></div>
-       </div>
+       <slider></slider>
        <div class='current-time'> {{ songPlayer.playTime }} </div>
        <div class='total-time'> {{ songPlayer.currentSong.length }} </div>
      </div>
@@ -29,10 +26,7 @@
    <div class='right-controls player-bar-control-group'>
      <div class='volume' >
        <i class='fa fa-volume-up'></i>
-       <div class='seek-bar'>
-         <div class='fill'></div>
-         <div class='thumb'></div>
-       </div>
+       <slider></slider>
      </div>
 
      <div class='queue-toggle'>
