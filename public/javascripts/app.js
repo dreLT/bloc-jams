@@ -441,6 +441,39 @@ blocJams.service('SongPlayer', function() {
    }
  };
 });
+
+blocJams.directive('clickMe', function() {
+  return {
+    restrict: 'E',
+    link: function(scope, element) {
+      $(element).click(function() {
+        alert('Element has been clicked');
+      });
+    }
+  }
+});
+
+blocJams.directive('countHoverTime', function() {
+  return {
+    restrict: 'A',
+    link: function(scope, element) {
+      var secondCount = 0;
+      var addToCounter = function() {
+        secondCount++;
+      };
+      var secondCounter = function() {
+        for (var i = 0; i < 1000; i++) {
+          window.setTimeout(addToCounter, 1000);
+        };
+      };
+      var displayCount = function() {
+        console.log(secondCount);
+      };
+      $(element).hover(secondCounter, displayCount);
+    }
+  };
+});
+
 });
 
 ;require.register("scripts/collection", function(exports, require, module) {
