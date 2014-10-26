@@ -125,12 +125,12 @@
       cursor: pointer;
       transition: all 100ms ease-in-out;
    }
-   &.no-animate {
+   &:active {
       .fill, .thumb {
         transition: none;
       }
    }
-   &:hover .thumb {
+   &:hover .thumb, &:active .thumb {
       width: 20px;
       height: 20px;
       margin-top: -10px;
