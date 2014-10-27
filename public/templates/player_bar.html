@@ -26,7 +26,7 @@
    <div class='right-controls player-bar-control-group'>
      <div class='volume' >
        <i class='fa fa-volume-up'></i>
-       <slider></slider>
+       <slider value='{{playTime}}' max='{{songPlayer.currentSong.length}}' on-change='songPlayer.seek(value)'></slider>
      </div>
 
      <div class='queue-toggle'>
