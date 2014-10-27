@@ -16,9 +16,9 @@
    <div class='currently-playing player-bar-control-group'>
      <h2 class='song-name'> {{ songPlayer.currentSong.name }} </h2>
      <div class='seek-control'>
-       <slider></slider>
-       <div class='current-time'> {{ songPlayer.playTime }} </div>
-       <div class='total-time'> {{ songPlayer.currentSong.length }} </div>
+       <slider value='{{playTime}}' max='{{songPlayer.currentSong.length}}' on-change='songPlayer.seek(value)'></slider>
+       <div class='current-time'> {{ playTime | timecode }} </div>
+       <div class='total-time'> {{ songPlayer.currentSong.length | timecode }} </div>
      </div>
      <h3 class='artist-name'> {{ songPlayer.currentAlbum.artist }} </h3>
    </div>
@@ -26,7 +26,7 @@
    <div class='right-controls player-bar-control-group'>
      <div class='volume' >
        <i class='fa fa-volume-up'></i>
-       <slider value='{{playTime}}' max='{{songPlayer.currentSong.length}}' on-change='songPlayer.seek(value)'></slider>
+       <slider></slider>
      </div>
 
      <div class='queue-toggle'>
