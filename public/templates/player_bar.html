@@ -25,8 +25,8 @@
 
    <div class='right-controls player-bar-control-group'>
      <div class='volume' >
-       <i class='fa fa-volume-up'></i>
-       <slider></slider>
+       <i class='fa' ng-class='volumeClass()' ng-click='toggleMute()'></i>
+       <slider value='{{songPlayer.volume}}' max='100' on-change='songPlayer.setVolume(value)'></slider>
      </div>
 
      <div class='queue-toggle'>
